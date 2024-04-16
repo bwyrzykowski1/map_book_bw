@@ -5,6 +5,16 @@ users: list = [
     {'name': 'Adrian', 'surname': 'Dobrzański', 'posts': '123'},
 
 ]
-print('Informacja o twoich znajomych: ')
-for user in users:
-    print(f'\tTwój znajomy {user['name']} {user['surname']} opublikował {user["posts"]}.')
+
+def read_friends(users:list)->None:
+    print('Informacja o twoich znajomych: ')
+    for user in users:
+        print(f'\tTwój znajomy {user['name']} {user['surname']} opublikował {user["posts"]}.')
+
+
+read_friends(users)
+
+
+
+
+

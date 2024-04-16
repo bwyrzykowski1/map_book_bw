@@ -5,10 +5,6 @@ users: list = [
     {'name': 'Adrian', 'surname': 'Dobrzański', 'posts': '123'},
     {'name': 'Bartek', 'surname': 'Wyrzykowski', 'posts': '300'},
 ]
-def search_user(users: list):
-    imie = input('Podaj imie: ')
-    for user in users:
-        if user['name'] == imie:
-            print(user)
-search_user(users)
+def remove_user(user: list):
+    imie= int(user['surname'])
 print(users)

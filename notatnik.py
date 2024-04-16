@@ -11,3 +11,4 @@ def search_user(users: list):
         if user['name'] == imie:
             print(user)
 search_user(users)
+print(users)

@@ -1,19 +1,16 @@
-users: list = [
+from models.data_source import users
+from utils.crud import read_friends
 
-    {'name': 'Julia', 'surname': 'Gotowiec', 'posts': '1500'},
-    {'name': 'Hubert', 'surname': 'Sybilski', 'posts': '123456789'},
-    {'name': 'Adrian', 'surname': 'Dobrzański', 'posts': '123'},
-
-]
-
-def read_friends(users:list)->None:
-    print('Informacja o twoich znajomych: ')
-    for user in users:
-        print(f'\tTwój znajomy {user['name']} {user['surname']} opublikował {user["posts"]}.')
-
-
-read_friends(users)
-
+if __name__ == '__main__':
+    while True:
+        print("Welcome to the menu  ")
+        print("1. Read a list of friends ")
+        print("0. Exit ")
+        menu_option = input("Choose an option: ")
+        if menu_option == "0":
+            break
+        if menu_option == "1":
+            read_friends(users)
 
 
 

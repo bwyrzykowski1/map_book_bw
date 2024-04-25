@@ -49,17 +49,17 @@ enter_nazwisko.grid(row=2, column=2)
 enter_posty.grid(row=3, column=2)
 enter_lokalizacja.grid(row=4, column=2)
 
-button_dodaj_uzytkownika = Button(ramka_formularz, text='Dodaj uzytkownika')
+button_dodaj_uzytkownika=Button(ramka_formularz,text='Dodaj uzytkownika')
 button_dodaj_uzytkownika.grid(row=5, column=2, columnspan=2)
 
-# szczegoly uzytkownika
-label_szczegoly_uzytkownika = Label(ramka_szczegoly_obiektu, text='Szczegóły użytkownika: ')
-label_imie_szczegoly_obiektu = Label(ramka_szczegoly_obiektu, text='Imie')
+#szczegoly uzytkownika
+label_szczegoly_uzytkownika = Label(ramka_szczegoly_obiektu,text='Szczegóły użytkownika: ')
+label_imie_szczegoly_obiektu= Label(ramka_szczegoly_obiektu,text='Imie')
 label_nazwisko_szczegoly_obiektu = Label(ramka_szczegoly_obiektu, text='Nazwisko')
 label_posty_szczegoly_obiektu = Label(ramka_szczegoly_obiektu, text='Liczba postów')
 label_lokalizacja_szczegoly_obiektu = Label(ramka_szczegoly_obiektu, text='Lokalizacja')
 
-label_imie_szczegoly_obiektu_wartosc = Label(ramka_szczegoly_obiektu, text='...')
+label_imie_szczegoly_obiektu_wartosc= Label(ramka_szczegoly_obiektu,text='...')
 label_nazwisko_szczegoly_obiektu_wartosc = Label(ramka_szczegoly_obiektu, text='...')
 label_posty_szczegoly_obiektu_wartosc = Label(ramka_szczegoly_obiektu, text='...')
 label_lokalizacja_szczegoly_obiektu_wartosc = Label(ramka_szczegoly_obiektu, text='...')
@@ -73,5 +73,6 @@ label_posty_szczegoly_obiektu.grid(row=1, column=4)
 label_posty_szczegoly_obiektu_wartosc.grid(row=1, column=5)
 label_lokalizacja_szczegoly_obiektu.grid(row=1, column=6)
 label_lokalizacja_szczegoly_obiektu_wartosc.grid(row=1, column=7)
+
 
 root.mainloop()

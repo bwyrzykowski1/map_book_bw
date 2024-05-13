@@ -5,6 +5,14 @@ users: list = [
     {'name': 'Adrian', 'surname': 'Dobrzański', 'posts': '123'},
     {'name': 'Bartek', 'surname': 'Wyrzykowski', 'posts': '300'},
 ]
-def remove_user(user: list):
-    imie= int(user['surname'])
+
+def update_user(users: list):
+    imie = input('Wprowadź imię użytkownika, któego dane chcesz zmienić: ')
+    for user in users:
+        if user['name'] == imie:
+            user['name']= input('Podaj nowe imie: ')
+            user['surname']= input('Podaj nowe nazwisko: ')
+            user['posts']= int(input('Podaj nową liczbę postów użytkownika: '))
+
+update_user(users)
 print(users)

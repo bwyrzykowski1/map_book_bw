@@ -3,6 +3,7 @@ from utils.crud import read_friends
 from utils.crud import add_user
 from utils.crud import search_user
 from utils.crud import remove_user
+from utils.crud import update_user
 if __name__ == '__main__':
     while True:
         print("Welcome to the menu  ")
@@ -10,6 +11,7 @@ if __name__ == '__main__':
         print("2. Add new user ")
         print("3. Search user ")
         print("4. Remove a user ")
+        print("5. Update")
         print("0. Exit ")
         menu_option = input("Choose an option: ")
         if menu_option == "0":
@@ -22,6 +24,8 @@ if __name__ == '__main__':
             search_user(users)
         if menu_option == "4":
             remove_user(users)
+        if menu_option == "5":
+            update_user(users)
 
 
 
